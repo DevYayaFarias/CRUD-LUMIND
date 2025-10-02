@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Atividade - Lumind</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; color: #333; }
+        form { max-width: 500px; margin: 0 auto; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { padding: 10px; background: #71a4d3; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 10px; width: 100%; }
+        button:hover { background: #54789e; }
+    </style>
+</head>
+<body>
+    <h1>Nova Atividade - Lumind</h1>
+    
+    <form id="formAtividade">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+        
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="">Selecione uma categoria</option>
+            <option value="Comunicacao">Comunicação Verbal e Não Verbal</option>
+            <option value="HabilidadesSociais">Habilidades Sociais e Emocionais</option>
+            <option value="Rotinas">Rotinas Diárias e Autonomia</option>
+            <option value="AprendizagemSensorial">Aprendizagem Sensorial e Motora</option>
+            <option value="Cognitiva">Cognitiva e Acadêmica</option>
+            <option value="Outras">Outras</option>
+        </select>
+        
+        <label for="data_inicio">Data de Início:</label>
+        <input type="datetime-local" id="data_inicio" name="data_inicio" required>
+        
+        <button type="submit" id="enviar">Cadastrar</button>
+        <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+    </form>
+    
+    <script src="atividade.js"></script> 
+</body>
+</html>
